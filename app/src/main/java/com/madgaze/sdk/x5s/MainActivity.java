@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (PermissionsMissing.size() > 0){
-            MDToast.makeText(MainActivity.this, String.format("Permission [%s] not allowed, please allows in the Settings.", String.join(", ", PermissionsMissing)), MDToast.LENGTH_SHORT, MDToast.TYPE_ERROR).show();
+            MDToast.makeText(MainActivity.this, String.format("Permission [%s] not allowed, please allows in the Settings."+", ", PermissionsMissing)), MDToast.LENGTH_SHORT, MDToast.TYPE_ERROR).show();
             return false;
         }
         return true;
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch(view.getId()){
                     case R.id.cameraOnOffBtn:
-                        toggleCameraOnOffBtn();wwww
+                        toggleCameraOnOffBtn();sss
                         break;
                     case R.id.takePictureBtn:
                         findViewById(R.id.takePictureBtn).setEnabled(false);
