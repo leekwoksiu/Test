@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 switch(view.getId()){
                     case R.id.cameraOnOffBtn:
                         toggleCameraOnOffBtn();sss
+
                         break;
                     case R.id.takePictureBtn:
                         findViewById(R.id.takePictureBtn).setEnabled(false);
