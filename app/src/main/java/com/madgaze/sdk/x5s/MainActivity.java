@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void askForPermission(){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, RequiredPermissions,7);
+            ActivityCompat.requestPermissions(this, RequiredPermissions,100);
         }
     }
 
@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 7){
+        if (requestCode == 100){
             if (!permissionReady()) {
                 askForPermission();
             } else {
