@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch(view.getId()){
                     case R.id.cameraOnOffBtn:
-                        toggleCameraOnOffBtn();sss
+                        toggleCameraOnOffBtn();saw
 
                         break;
                     case R.id.takePictureBtn:
